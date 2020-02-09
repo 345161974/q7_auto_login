@@ -4,6 +4,7 @@
 	<!-- 一个账户配置开始 -->
 	<broker name="">
 	   <q7_path></q7_path>
+	   <server_index></server_index>
 	   <user_id></user_id>
 	   <password></password>
 	</broker>
