@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BROKERS>
+	<!-- 一个账户配置开始 -->
+	<broker name="">
+	   <q7_path></q7_path>
+	   <user_id></user_id>
+	   <password></password>
+	</broker>
+	<!-- 一个账户配置结束 -->
+</BROKERS>
+
