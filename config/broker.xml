@@ -3,10 +3,18 @@
 <BROKERS>
 	<!-- 一个账户配置开始 -->
 	<broker name="">
-	   <q7_path></q7_path>
-	   <server_index></server_index>
-	   <user_id></user_id>
-	   <password></password>
+		<!-- 是否需要程序自动帮助确认结算单 1:需要 0:不需要 -->
+		<settlement_inform>0</settlement_inform>
+		<!-- 从登录到结算单窗口弹出等待时间,根据网络环境自行设置,默认16秒(单位:秒) -->
+		<delay_to_settlement>16</delay_to_settlement>
+		<!-- 快期程序路径,请通过Spy++确认程序路径 -->
+		<q7_path></q7_path>
+		<!-- 快期登录服务器地址,如果N个服务器地址,填写范围 (0 - (N-1)] -->
+		<server_index></server_index>
+		<!-- 快期登录期货账户名 -->
+		<user_id></user_id>
+		<!-- 期货账户密码 -->
+		<password></password>
 	</broker>
 	<!-- 一个账户配置结束 -->
 </BROKERS>

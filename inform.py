@@ -10,7 +10,7 @@ if __name__ == '__main__':
 		main_win = Application().connect(title_re=r'.*快期交易系统*', found_index=0)
 	except Exception as e:
 		print("登录快期失败! or 网络超时!")
-		raise e
+		# raise e
 	
 	set_win = main_win['结算结果确认']
 	# print("settlement_win exists:", set_win.exists())

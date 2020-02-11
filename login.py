@@ -12,6 +12,17 @@ if __name__ == '__main__':
 	brokers = root.getElementsByTagName('broker')
 	# 遍历配置文件
 	for broker in brokers:
+
+		# 是否需要确认结算单功能
+		settlement_inform = broker.getElementsByTagName('settlement_inform')[0]
+		settlement_inform_value = settlement_inform.childNodes[0].data
+		print("load_xml settlement_inform_value:", int(settlement_inform_value))
+
+		# 结算单窗口弹出之前延时(s)
+		delay_to_settlement = broker.getElementsByTagName('delay_to_settlement')[0]
+		delay_to_settlement_value = delay_to_settlement.childNodes[0].data
+		print("load_xml delay_to_settlement:", int(delay_to_settlement_value))
+
 		# 快期可执行程序路径
 		q7_path = broker.getElementsByTagName('q7_path')[0]
 		q7_path_value = q7_path.childNodes[0].data
@@ -47,16 +58,19 @@ if __name__ == '__main__':
 		login_form['交易密码Edit'].set_text(password_value)
 		# 登录按钮点击
 		login_form['登录Button'].click()
-		time.sleep(15)
-		# 如果是打包版本执行如下代码
-		'''开始'''
-		# 查找middleware目录下的inform.exe
-		# dirname = os.path.dirname(os.path.realpath("__file__"))
-		# filename = os.path.join(dirname, r'middleware/inform.exe')
-		# os.system(filename)
-		'''结束'''
 
-		# 如果是调试版本,执行如下代码
-		'''开始'''
-		os.system('python inform.py')
-		'''结束'''
+		# 如果需要结算单确认功能
+		if int(settlement_inform_value) == 1:
+			time.sleep(int(delay_to_settlement_value))
+			# 如果是打包版本执行如下代码
+			'''开始'''
+			# 查找middleware目录下的inform.exe
+			dirname = os.path.dirname(os.path.realpath("__file__"))
+			filename = os.path.join(dirname, r'middleware/inform.exe')
+			os.system(filename)
+			'''结束'''
+
+			# 如果是调试版本,执行如下代码
+			'''开始'''
+			# os.system('python inform.py')
+			'''结束'''
