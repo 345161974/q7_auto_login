@@ -1,0 +1,33 @@
+missing module named resource - imported by posix, D:\迅雷下载\小蜜蜂开发环境搭建\pywinauto_env_build\快期自动化操作_源码\inform.py
+missing module named posix - imported by os, D:\迅雷下载\小蜜蜂开发环境搭建\pywinauto_env_build\快期自动化操作_源码\inform.py
+missing module named _posixsubprocess - imported by subprocess, multiprocessing.util, D:\迅雷下载\小蜜蜂开发环境搭建\pywinauto_env_build\快期自动化操作_源码\inform.py
+missing module named 'org.python' - imported by pickle, D:\迅雷下载\小蜜蜂开发环境搭建\pywinauto_env_build\快期自动化操作_源码\inform.py, xml.sax
+missing module named ce - imported by os, D:\迅雷下载\小蜜蜂开发环境搭建\pywinauto_env_build\快期自动化操作_源码\inform.py
+missing module named readline - imported by cmd, code, pdb, D:\迅雷下载\小蜜蜂开发环境搭建\pywinauto_env_build\快期自动化操作_源码\inform.py
+excluded module named _frozen_importlib - imported by importlib, D:\迅雷下载\小蜜蜂开发环境搭建\pywinauto_env_build\快期自动化操作_源码\inform.py
+missing module named _scproxy - imported by urllib.request
+missing module named java - imported by platform, D:\迅雷下载\小蜜蜂开发环境搭建\pywinauto_env_build\快期自动化操作_源码\inform.py
+missing module named 'java.lang' - imported by platform, D:\迅雷下载\小蜜蜂开发环境搭建\pywinauto_env_build\快期自动化操作_源码\inform.py, xml.sax._exceptions
+missing module named vms_lib - imported by platform, D:\迅雷下载\小蜜蜂开发环境搭建\pywinauto_env_build\快期自动化操作_源码\inform.py
+missing module named termios - imported by tty, D:\迅雷下载\小蜜蜂开发环境搭建\pywinauto_env_build\快期自动化操作_源码\inform.py, getpass
+missing module named grp - imported by tarfile, shutil, D:\迅雷下载\小蜜蜂开发环境搭建\pywinauto_env_build\快期自动化操作_源码\inform.py
+missing module named _dummy_threading - imported by dummy_threading, D:\迅雷下载\小蜜蜂开发环境搭建\pywinauto_env_build\快期自动化操作_源码\inform.py
+missing module named pwd - imported by posixpath, tarfile, shutil, http.server, webbrowser, D:\迅雷下载\小蜜蜂开发环境搭建\pywinauto_env_build\快期自动化操作_源码\inform.py, getpass
+missing module named org - imported by copy, D:\迅雷下载\小蜜蜂开发环境搭建\pywinauto_env_build\快期自动化操作_源码\inform.py
+missing module named sets - imported by comtypes.tools.typedesc_base, comtypes.tools.tlbparser, comtypes.tools.codegenerator
+missing module named numpy - imported by comtypes.npsupport, comtypes.safearray
+missing module named logger - imported by pywinauto.actionlogger
+missing module named 'Xlib.ext' - imported by pywinauto.linux.keyboard, pywinauto.mouse
+missing module named Xlib - imported by pywinauto.linux.keyboard, pywinauto.mouse
+missing module named 'Xlib.display' - imported by pywinauto.mouse
+missing module named 'Xlib.XK' - imported by pywinauto.linux.keyboard
+missing module named PIL - imported by pywinauto.base_wrapper, pywinauto.controls.hwndwrapper
+missing module named 'PIL.Image' - imported by pywinauto.xml_helpers
+missing module named extra_tests - imported by pywinauto.tests
+missing module named StringIO - imported by six
+missing module named multiprocessing.set_start_method - imported by multiprocessing, multiprocessing.spawn
+missing module named multiprocessing.get_start_method - imported by multiprocessing, multiprocessing.spawn
+missing module named multiprocessing.TimeoutError - imported by multiprocessing, multiprocessing.pool
+missing module named multiprocessing.get_context - imported by multiprocessing, multiprocessing.pool, multiprocessing.managers, multiprocessing.sharedctypes
+missing module named multiprocessing.BufferTooShort - imported by multiprocessing, multiprocessing.connection
+missing module named multiprocessing.AuthenticationError - imported by multiprocessing, multiprocessing.connection

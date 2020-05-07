@@ -13,6 +13,16 @@ if __name__ == '__main__':
 	# 遍历配置文件
 	for broker in brokers:
 
+		# 备注
+		remarks = broker.getElementsByTagName('remarks')[0]
+		remarks_value = remarks.childNodes[0].data
+		print("load_xml remarks_value:", remarks_value)
+
+		# 是否开启自动登录
+		is_active = broker.getElementsByTagName('is_active')[0]
+		is_active_value = is_active.childNodes[0].data
+		print("load_xml is_active_value:", int(is_active_value))
+
 		# 是否需要确认结算单功能
 		settlement_inform = broker.getElementsByTagName('settlement_inform')[0]
 		settlement_inform_value = settlement_inform.childNodes[0].data
@@ -43,6 +53,11 @@ if __name__ == '__main__':
 		password_value = password.childNodes[0].data
 		print('load_xml password:', password_value)
 
+		# 如果不需要自动登录
+		if int(is_active_value) != 1:
+			print("is_active_value == 0")
+			continue
+
 		# login.py
 		# app = Application(backend="uia").start(q7_path_value)
 		# 采用win32
@@ -58,6 +73,8 @@ if __name__ == '__main__':
 		login_form['交易密码Edit'].set_text(password_value)
 		# 登录按钮点击
 		login_form['登录Button'].click()
+
+
 
 		# 如果需要结算单确认功能
 		if int(settlement_inform_value) == 1:
